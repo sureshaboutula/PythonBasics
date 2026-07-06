@@ -2,7 +2,7 @@ import time
 
 from playwright.sync_api import Playwright, expect
 
-from PythonBasics.Playwright.utils.apiBase import APIUtils
+from utils.apiBase import APIUtils
 
 
 def test_e2e_web_api(playwright:Playwright):
