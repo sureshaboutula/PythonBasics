@@ -30,10 +30,12 @@ def pre_setup2():
     yield
     print("I teardown browser function instance")
 
-
+@pytest.mark.regression
 def test_initial_check(pre_setup, pre_setup2):
     print("This is first test")
 
+# @pytest.mark.skip - To skip a test
+@pytest.mark.smoke
 def test_second_check(pre_setup, pre_setup2):
     print("This is second test")
     assert  pre_setup == "pass"
